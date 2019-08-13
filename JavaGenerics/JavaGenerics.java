@@ -13,6 +13,10 @@ class Base<T1, T2> {
 	public<TM> void display(TM value) {
 		System.out.println(value);
 	}
+	
+	public<TV> TV displayValue(TV value) {
+		return value;
+	}
 }
 
 class JavaGenerics {
@@ -27,5 +31,8 @@ class JavaGenerics {
 		
 		b1.display("Hello Renjith");
 		b1.display(10);
+		
+		System.out.println(b1.displayValue(200));
+		
 	}
 }
