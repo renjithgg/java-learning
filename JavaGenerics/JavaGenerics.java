@@ -41,7 +41,9 @@ class JavaGenerics {
 		System.out.println("Name = "+ b1.getFirstObject());
 		System.out.println("Id = "+ b1.getSecondObject());
 		
-		Base<Double, Character> b2 = new Base<Double, Character>(12.5, 'R');
+		// Base<Double, Character> b2 = new Base<Double, Character>(12.5, 'R'); // before java 7
+		Base<Double, Character> b2 = new Base<>(12.5, 'R');
+		
 		System.out.println("Pay money = "+ b2.getFirstObject());
 		System.out.println("Pay char = "+ b2.getSecondObject());
 		
