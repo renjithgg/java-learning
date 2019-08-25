@@ -17,6 +17,7 @@ class OuterClass {
 		public void innerClassDisplayVariable() {
 			System.out.println(outerClassVar);
 		}
+				
 	}
 	
 	static class StaticNestedInnerClass {
@@ -29,7 +30,7 @@ class OuterClass {
 		}
 		
 		public void accessOnlyStaticField() {
-			System.out.println("I can only access static field from outer class" + "My age = " + myAge);  
+			System.out.println("I am Static Inner class method and I can only access static field from outer class" + "My age = " + myAge);  
 		}		
 	}
 	
